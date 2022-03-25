@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geometricas | curso practico javascript</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Figuras geometricas</h1>
+            <p>Esteel el primer taller del curso practico de Javascrip</p>
+    </header>
+    
+    <section>
+        <h2>Calcula el area y el perimetro de un cuadrado</h2>
+
+        <!--CUADRADO FORMULARIO-->
+        <form><!--Creamos un formulario para permitir que sea escuchada nauestra aplicaciaon mediante nuestro html-->
+            <label for="inputCuadrado">Escribe cuanto mi decada lado de tu cuadrado</label>
+            <input type="number" id="inputCuadrado"/>
+            <button type="button" onclick="calPerimetroCuadrado()"> <!--Atributo onclick , me permite ejecutar una funcion javaScript cuando 
+                se hace cclick en este caso en el boton-->
+                Calcular Perimetro</button>
+            <button type="button" onclick="calAreaCuadrado()">Calcular Area</button>
+        </form>
+
+    </section>
+
+    <section>
+        <h2>Calcula el area y el perimetro de un Triangulo </h2>
+
+        <!--FORMULARIO TRIANGULO-->
+        <form><!--Creamos un formulario para permitir que sea escuchada nauestra aplicaciaon mediante nuestro html-->
+            <label for="lado1">lado1</label>
+            <input type="number" id="lado1"/>
+            <label for="lado2">Lado2</label>
+            <input type="number" id="lado2"/>
+            <label for="base">Base</label>
+            <input type="number" id="base"/>
+
+            <button type="button" onclick="calPerimetroTriangulo()"> <!--Atributo onclick , me permite ejecutar una funcion javaScript cuando 
+                se hace cclick en este caso en el boton-->
+                Calcular Perimetro</button>
+            <button type="button" onclick="calAreaTriangulo()">Calcular Area</button>
+            
+        </form>
+    </section>
+
+    <section>
+        <h2>Calcula el area y el perimetro de un Triangulo </h2>
+
+        <!--FORMULARIO CIRCULO-->
+        <form><!--Creamos un formulario para permitir que sea escuchada nauestra aplicaciaon mediante nuestro html-->
+            <label for="diametro">Diametro</label>
+            <input type="number" id="diametro"/>
+            <label for="radio">Radio</label>
+            <input type="number" id="radio"/>
+        
+            <button type="button" onclick="calPerimetroCirculo()"> <!--Atributo onclick , me permite ejecutar una funcion javaScript cuando 
+                se hace cclick en este caso en el boton-->
+                Calcular Perimetro</button>
+            <button type="button" onclick="calAreaCirculo()">Calcular Area</button>
+            
+        </form>
+    </section>v
+
+
+    <script src="./figuras.js"></script>
+</body>
+</html>
